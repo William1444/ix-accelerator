@@ -1,4 +1,4 @@
-<!doctype html>
+	<!doctype html>
 <html lang="en">
 
 	<head>
@@ -41,174 +41,111 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>DevOps at Scale</h1>
-					<h3>Lessons Learned from the Post Office Journey</h3>
+					<h1>Consistent Scaled Delivery</h1>
+					<h3>Lessons Learned from the Post Office</h3>
 					<p>
-						<small>Created by <a href="https://williamlacy.herokuapp.com">William Lacy</a> / <a href="https://donalspring.herokuapp.com">Dónal Spring</a></small>
+						<small>Created by <a href="http://williamjlacy.com">William Lacy</a> / <a href="http://www.oligibson.com/">Oliver Gibson</a> / <a href="https://donalspring.herokuapp.com">Dónal Spring</a></small>
 					</p>
 				</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<img  height="238" data-src="./images/lacycakes.jpg" alt="Lacy Cakes" style="margin: 25px">
-					<img  height="238"  data-src="./images/meIBM.jpg" alt="Donal Spring" style="margin: 25px">
-					<p> DevOps | Agile | Fullstack | Tech Lead </p>
-				</section>
-
-				<section>
-					<section>
-						<h2>Our History of DevOps</h2>
-					</section>
-					<section>
-						<h2>Homebase</h2>
-					</section>
-					<section data-background="images/homebase.png">
-					</section>
-					<section>
-						<h2>Visa / Ikea</h2>
-					</section>
-					<section>
-						<h2>Vodafone</h2>
-					</section>
-					<section data-background="images/vodafone.png"></section>
-					<section>
-						<h2>Castrol</h2>
-					</section>
-					<section data-background="images/castrol-aem.png"></section>
-				</section>
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
 						<h2>The Brief</h2>
 						<p>Replacing Point of Sale device in Post Office</p>
 						<p>Solution had to co-exist with existing infrastructure</p>
+						<p>Had to be easy to update and add new products</p>
+						<p>Bespoke products unusual for POS systems</p>
 						<p>Minimal impact on current users output</p>
 					</section>
 					<section>
-						<h2>The Problems</h2>
-						<p>Multiple Applications for each service sold by PO</p>
-						<p>Managing consistancy across all apps</p>
-						<p>Integration into existing commerce solution</p>
-						<p>Maintenance and monitoring of Apps post go live</p>
+						<h2>Product Microservice Approach</h2>
+						<p>~70 ACNE stack applications</p>
+						<p>Consistent API driven services</p>
+						<p>Integrated into Sterling and Gravity via REST over HTTP</p>
+						<p>Consistent UI for a seamless user experience</p>
+						<p>6 GD microservice scrum teams and 1 UK</p>
 					</section>
 					<section>
-						<h2>The Solutions</h2>
-						<p>Microservice Architecture proposed</p>
-						<p>Created a UI Catalog</p>
-						<p>Application Scaffolded (Yeoman)</p>
-						<p>Single tech choice across the stack (Javascript)</p>
-						<p>Cloudhosted infrastructure (Bluemix Dedicated)</p>
-						<p>'Sticker Book' approach</p>
-						<p>DevOps at scale</p>
+						<h2>Challenges with the approach</h2>
+						<p>Maintain consistent approach and development quality</p>
+						<p>Unknown quality of off shore development resource</p>
+						<p>Consistent path to production</p>
+						<p>Fragmented Data</p>
+						<p>Repeated Code</p>
+						<p>Maintenance and monitoring of apps post go live</p>
 					</section>
+
 				</section>
 
 				<section>
 					<section>
-						<h2>Learnings at the Post Office</h2>
-						<p>
-						</p>
+						<h2>Solution for Post Office</h2>
 					</section>
 					<section>
-						<h3>Generators</h3>
-						<p>Forked yeoman generator</p>
-						<p>'Sticker Book' approach</p>
-						<p>Drive consistency & quality with baked in best practice</p>
+						<h3>Application Scaffolding</h3>
+							<p>Using Yeoman to create Interactive Generators</p>
+							<p>Forked Open Source Generator</p>
+							<p>Consistent Build Interface for all apps with Grunt</p>
+							<p>Embedded best practice (TDD, Coverage, Linting)</p>
 					</section>
 
 					<section>
-						<h3>Catalogs</h3>
-						<p>live demo!</p>
+						<h3>Private Bower & NPM Modules</h3>
+						<p>Private modules provide easy distribution and versioning</p>
+						<p>Open source contribution model prevented rework</p>
+						<p>All components individually tested</p>
+						<p>Fix once, fix everywhere</p>
+						<p>UI Catalog</p>
 					</section>
 
-					<section>
-						<h3>Bluemix</h3>
-						<p>Pipeline from local > ci > si > uat > prod</p>
-						<p>scripted build and deploys (no GUI here!)</p>
-						<p>Public > Dedicated</p>
-						<p>Firewall & Security</p>
-					</section>
-					<section>
-						<h3>Modularisation</h3>
-						<p>Code for reuse over single use</p>
-						<p>Logger modules</p>
-						<p>Backend modules</p>
-
-					</section>
-					<section>
-						<h3>Gamification & ethos</h3>
-						<p>Cowboy committer</p>
-						<p>CI game</p>
-						<p>No failed build over night - coffee rule!</p>
-					</section>
-					<section data-background="images/cowboy.png"></section>
-
-					<section>
-						<h3>Gitflow and Pull Requests</h3>
-						<p>Mandatory peer review of code</p>
-						<p>Git best practices (develop / master / release)</p>
-					</section>
 					<section>
 						<h3>Testing</h3>
-						<p>Generated app with 85% coverage</p>
+						<p>Generated app with 85% code coverage</p>
 						<p>Unit tests (front and backend)</p>
-						<p>e2e tests</p>
-						<p>Code Coverage</p>
+						<p>API endpoint testing</p>
+						<p>e2e tests against remote endpoints</p>
+						<p>Static analysis</p>
 					</section>
-					<section>
-						<h3>DSL to manage pipelines</h3>
-						<p>Pipeline as code</p>
-						<p>Automated Pipeline generation</p>
-					</section>
-					<section>
-						<h3>Docker</h3>
-						<p>Silo Builds</p>
-						<p>Cloud Compute</p>
-						<p>40+ concurrent builds</p>
 
+					<section>
+						<h3>Auto generated Jenkins pipelines</h3>
+						<p>Bitbucket API used to auto create pipelines from DSL script (pipeline as code)</p>
+						<p>Centralised pipeline, change once, change everywhere</p>
+						<p>Green from go</p>
+						<p>Consistent build interface (scaffolded project)</p>
+						<p>Scaled cloud compute using docker containers</p>
+						<p>Auto generated information radiators per team and for the project</p>
+						<p>Blocker analysis, radiator to show working teams</p>
 					</section>
-					<section data-background="images/castrol-docker.png"></section>
 
+					<section>
+						<h3>People & Culture</h3>
+						<p>Mandatory peer review of code</p>
+						<p>Git Flow</p>
+						<p>Developer Test</p>
+						<p>In person on-boarding of GD teams</p>
+						<p>Weekly tech checkpoint meetings with all teams</p>
+						<p>Foster culture of pride for quality</p>
+					</section>
 
 				</section>
 
 				<section>
-					<h2>Post Office (fabricated) Live Demo!</h2>
-					<p>
-						clean room demo of the key as aspects of the Post Office project
-					</p>
+					<h2>Challenges with our Approach</h2>
+					<p>The project plan</p>
+					<p>Contribution model relies on contribution culture</p>
+					<p>Quality gates angered management</p>
+					<p>Daunting to inexperienced JavaScript developers</p>
+					<p>Resourcing, quality in quality out</p>
 				</section>
+
 				<section>
-					<section>
-						<h2>Repeating the pattern</h2>
-						<p>
-						</p>
-					</section>
-					<section>
-						<h3>Castrol</h3>
-					</section>
-					<section data-background="images/castrol-slaves.png" data-background-size="350px"></section>
-					<section>
-						<h2>Monitoring </h2>
-						<p>
-						</p>
-					</section>
-					<section data-background="images/homebase-tl.png"></section>
-					<section>
-						<h2>Helpers </h2>
-						<p>
-						</p>
-					</section>
-					<section data-background="images/castrol-helpers.png" data-background-size="100%"></section>
-
-				</section>
-
-				<section style="text-align: left;">
 					<h1>THE END</h1>
 					<p>Thanks for listening. Feel free to contact us on
 					</p>
 					<p style="text-align: center;">
-						donal@uk.ibm.com
+						oliver.gibson@uk.ibm.com
 					</p>
 					<p style="text-align: center;">
 						williamlacy@uk.ibm.com
