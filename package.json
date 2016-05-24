@@ -15,9 +15,13 @@
     "email": "donal@uk.ibm.com",
     "web": "https://donalspring.herokuapp.com"
   },{
-    "name": "Sam Marland",
-    "email": "sam@uk.ibm.com",
-    "web": "http://blog.marland.io"
+    "name": "Oliver Gibson",
+    "email": "oliver.gibson@uk.ibm.com",
+    "web": "http://www.oligibson.com/"
+  },{
+    "name": "William Lacy",
+    "email": "williamlacy@uk.ibm.com",
+    "web": "http://williamjlacy.com/"
   }],
   "repository": {
     "type": "git",
