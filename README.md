@@ -3,7 +3,7 @@
 This is a present was created for a welcome event for exc.io colleagues.
 
 It's written in Reveal.js and can be run by using 
-
+    npm install
     node index.js
     
 
